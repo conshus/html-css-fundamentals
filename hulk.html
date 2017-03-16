@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hulk Mad</title>
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Sue+Ellen+Francisco" rel="stylesheet">
+    <style>
+      .bruce{
+        position:absolute;
+        top:55px;
+        left:0;
+        font-size:5em;
+        opacity:1;
+        z-index:5;
+        background-color: blue;
+        /*font-family: 'Sue Ellen Francisco', cursive;*/
+        font-family: 'Bangers', cursive;
+        transition: font-size 3s, color 2s, opacity 3s, z-index 3s, left 2s, display 2s;
+
+      }
+      .bruce:hover{
+          font-size:5em;
+          opacity:0;
+          display:none;
+          z-index:1;
+          left:-100px
+      }
+      .hulk{
+        position:absolute;
+        top:55px;
+        left:0;
+        opacity:1;
+        font-size:5em;
+        font-family: 'Bangers', cursive;
+        transition: font-size 3s, color 2s, opacity 1s;
+      }
+      .hulk:hover{
+        font-size:5em;
+        color: green;
+        opacity:1;
+
+      }
+      .bruce .hulk{
+        position: absolute;
+        top: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bruce"><span>Puny Banner.</span></div>
+    <div class="hulk">Hulk Smash!</div>
+    <div class="bruce hulk">this is a test</div>
+  </body>
+</html>
